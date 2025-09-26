@@ -70,3 +70,10 @@ En otras palabras, lo desarrollado para encontrar las mejores posiciones de los 
 
 -Finalmente se muestra el plano del área a buscar, con las posiciones más óptimas de los drones y la probabilidad de sobrevivientes representado en colores rojizos, cuanto más claro sea el cuadro, mayor probabilidad hay de que haya sobrevivientes en esa zona.
 
+### Qué pasaria si las iteraciones tuvieran el total de 120 minutos?
+
+Si en cada iteración los drones escanean más terreno, la función fitness podría mejorar porque cada dron tiene chance de cubrir más celdas. No obstante, el objetivo de encontrar la mayor probabilidad de sobrevivientes en el menor tiempo posible, quedaría afectado, dado que si se toman 50 iteraciones dentro de esas 2 horas, pueden terminar afectando la probabilidad final dado un tiempo pasado.
+
+Eso sí, la maximización de la función fitness **se mantendría* ya que siempre busca el mejor resultado de esta, más si no llega a encontrar un mejor resultado que el anterior un tiempo después, la probabilidad nunca aumentaría con el pasar del tiempo.
+
+
